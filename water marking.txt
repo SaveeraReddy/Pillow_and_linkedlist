@@ -1,0 +1,7 @@
+#watermarking
+from PIL import Image
+from PIL import ImageDraw
+x = Image.open('/content/gdrive/My Drive/Colab Notebooks/jpg/1.jpg')
+draw=ImageDraw.Draw(x)
+draw.text((50,150),"INDIA",(48,178,220))
+x

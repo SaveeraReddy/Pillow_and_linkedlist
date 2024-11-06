@@ -1,0 +1,6 @@
+#tumbnail
+from PIL import Image
+x=Image.open('/content/gdrive/My Drive/Colab Notebooks/jpg/2.jpg')
+x.thumbnail((30,30))
+x.save('/content/gdrive/My Drive/Colab Notebooks/jpg/imgae_thumbnail.jpg')
+x

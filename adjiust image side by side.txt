@@ -1,0 +1,13 @@
+#adjusting image side by side
+from PIL import Image
+x=Image.open('/content/gdrive/My Drive/Colab Notebooks/jpg/1.jpg')
+y=Image.open('/content/gdrive/My Drive/Colab Notebooks/jpg/2.jpg')
+x=x.resize((100,100))
+y=y.resize((100,100))
+x_size=x.size
+y_size=y.size
+new_image=Image.new('RGB',(2* x_size[0],x_size[1]),(250,250,250))
+new_image.paste(x,(0,0))
+new_image.paste(y,(x_size[0],0))
+new_image.save('/content/gdrive/My Drive/Colab Notebooks/jpg/m.jpg')
+new_image

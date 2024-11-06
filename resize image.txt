@@ -1,0 +1,5 @@
+#resizing image
+from PIL import Image
+x=Image.open('/content/gdrive/My Drive/Colab Notebooks/jpg/2.jpg')
+y=x.resize((100,100))
+y

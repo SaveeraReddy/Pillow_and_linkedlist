@@ -1,0 +1,7 @@
+#saving the both image and resized image
+from PIL import Image
+x=Image.open("path")
+y=x.resize((100,100))
+y.save("path")
+x.show()
+y.show()
